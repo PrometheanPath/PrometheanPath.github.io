@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://code.jquery.com https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://stackpath.bootstrapcdn.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://script.google.com; frame-src 'none';">
+  <title>Contact – The Promethean Path</title>
+  <meta name="description" content="Get in touch with The Promethean Path. Apply for advisor matching or send us a message — we respond within 48 hours.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact – The Promethean Path">
+  <meta property="og:description" content="Get in touch with The Promethean Path. Apply for advisor matching or send us a message — we respond within 48 hours.">
+  <meta property="og:url" content="https://prometheanpath.github.io/contact.html">
+  <meta property="og:image" content="https://prometheanpath.github.io/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact – The Promethean Path">
+  <meta name="twitter:description" content="Get in touch with The Promethean Path. Apply for advisor matching or send us a message — we respond within 48 hours.">
+  <meta name="twitter:image" content="https://prometheanpath.github.io/images/og-image.png">
+  <meta name="theme-color" content="#07101c">
+  <link rel="canonical" href="https://prometheanpath.github.io/contact.html">
+  <link rel="icon" href="animated-favicon.gif" type="image/gif">
+  <script src="animated-favicon.js" defer></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav class="nav nav--static" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo-text">Promethean Path</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="apply.html" class="nav-cta">Apply</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <h1 class="page-hero-title">Get in Touch</h1>
+    <p class="page-hero-subtitle">We typically respond to every enquiry within 48 hours.</p>
+  </div>
+
+  <main class="page-content" style="max-width: 640px;">
+
+    <div data-aos="fade-up">
+      <h2 class="section-title">Apply Now</h2>
+      <p>The fastest way to get started is to submit your application. Your first match is free — no commitment required.</p>
+      <a href="apply.html" class="contact-cta-btn">Apply Now</a>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="100" style="margin-top: 48px;">
+      <h2 class="section-title">Send us a message</h2>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" class="form-control" placeholder="Full name" required maxlength="100">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" class="form-control" placeholder="you@example.com" required maxlength="254">
+        </div>
+        <div class="form-group">
+          <label for="subject">What are you exploring?</label>
+          <select id="subject" class="form-control">
+            <option value="">Select a pathway</option>
+            <option>Corporate &amp; Commercial Law</option>
+            <option>Management Consulting</option>
+            <option>Investment &amp; Corporate Banking</option>
+            <option>Public Policy &amp; Government</option>
+            <option>University decision support</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea id="message" class="form-control" rows="5" placeholder="Tell us where you are in your journey and what you're hoping for..." required maxlength="2000"></textarea>
+        </div>
+        <!-- Honeypot — visually hidden, bots will fill this field -->
+        <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
+          <label for="contact-website">Website</label>
+          <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit" class="contact-cta-btn">Send message</button>
+        <p id="form-success" style="display:none; color: #481e1e; margin-top: 12px; font-weight: 600;">Thanks — we'll be in touch shortly.</p>
+      </form>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">Promethean Path</span>
+      <span class="footer-copy">
+        &copy; 2026 The Promethean Path &nbsp;|&nbsp;
+        <a href="privacy.html" style="color: rgba(240,230,205,0.7); text-decoration: underline;">Privacy Policy</a>
+        &nbsp;|&nbsp;
+        <a href="terms.html" style="color: rgba(240,230,205,0.7); text-decoration: underline;">Terms of Service</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" integrity="sha384-n1AULnKdMJlK1oQCLNDL9qZsDgXtH6jRYFCpBtWFc+a9Yve0KSoMn575rk755NJZ" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+
+    var SHEET_URL = 'https://script.google.com/macros/s/AKfycbytYuYh_jqSyWAyhJ-ijdQo5KYJ-Ewd3kSJRK2KXUL1AUegennkYzz2yQg7f-rHeQY/exec';
+    var contactLastSubmit = 0;
+
+    function sanitizeInput(str) {
+      return str.trim().replace(/[<>'"]/g, '').substring(0, 2000);
+    }
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+
+      // Honeypot check
+      var honeypot = document.getElementById('contact-website');
+      if (honeypot && honeypot.value !== '') {
+        document.getElementById('form-success').style.display = 'block';
+        e.target.reset();
+        return;
+      }
+
+      // Rate limiting — 30 seconds between submissions
+      var now = Date.now();
+      if (now - contactLastSubmit < 30000) {
+        alert('Please wait a moment before submitting again.');
+        return;
+      }
+
+      var nameEl    = document.getElementById('name');
+      var emailEl   = document.getElementById('email');
+      var subjectEl = document.getElementById('subject');
+      var messageEl = document.getElementById('message');
+
+      var name    = sanitizeInput(nameEl.value);
+      var email   = emailEl.value.trim();
+      var message = sanitizeInput(messageEl.value);
+
+      if (name.length < 2 || name.length > 100) {
+        alert('Name must be between 2 and 100 characters.');
+        nameEl.focus();
+        return;
+      }
+
+      if (!isValidEmail(email)) {
+        alert('Please enter a valid email address.');
+        emailEl.focus();
+        return;
+      }
+
+      if (message.length < 10) {
+        alert('Please enter a message of at least 10 characters.');
+        messageEl.focus();
+        return;
+      }
+
+      nameEl.value    = name;
+      messageEl.value = message;
+      contactLastSubmit = now;
+
+      fetch(SHEET_URL, {
+        method:  'POST',
+        mode:    'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({
+          name:          name,
+          email:         email,
+          guidance_type: subjectEl ? subjectEl.value || 'Contact Enquiry' : 'Contact Enquiry',
+          pathway:       '',
+          message:       message
+        })
+      }).catch(function() {});
+
+      document.getElementById('form-success').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+    <i class="fas fa-angle-double-up"></i>
+  </button>
+
+  <script>
+  (function () {
+    var btn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', function () {
+      btn.style.display = window.scrollY > 500 ? 'block' : 'none';
+    }, { passive: true });
+    window.topFunction = function () { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  })();
+  </script>
+
+  <div id="cookie-banner" style="position: fixed; bottom: 1.5rem; right: 1.5rem; background: #fff; color: #111; padding: 1.25rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 28px rgba(0,0,0,0.22); max-width: 300px; z-index: 9999; display: none; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+    <p style="margin: 0 0 0.4rem 0; font-weight: 700; font-size: 15px;">Cookie Notice</p>
+    <p style="margin: 0 0 1rem 0; color: #444;">We use cookies to analyze site traffic and improve your experience. <a href="privacy.html" style="color: #1a56a0;">Privacy Policy</a></p>
+    <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+      <button onclick="declineCookies()" style="background: transparent; color: #666; border: 1px solid #ddd; padding: 0.4rem 0.9rem; cursor: pointer; border-radius: 6px; font-size: 13px;">Decline</button>
+      <button onclick="acceptCookies()" style="background: #111; color: #fff; border: none; padding: 0.4rem 0.9rem; cursor: pointer; border-radius: 6px; font-size: 13px; font-weight: 600;">Accept</button>
+    </div>
+  </div>
+  <script>
+  (function() {
+    function loadGA() {
+      if (window._gaLoaded) return;
+      window._gaLoaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4CQ2CBR0C9';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function() { window.dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-4CQ2CBR0C9');
+    }
+    window.acceptCookies = function() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA();
+    };
+    window.declineCookies = function() {
+      localStorage.setItem('cookiesAccepted', 'false');
+      document.getElementById('cookie-banner').style.display = 'none';
+    };
+    if (localStorage.getItem('cookiesAccepted') === 'true') { loadGA(); }
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  })();
+  </script>
+
+</body>
+</html>

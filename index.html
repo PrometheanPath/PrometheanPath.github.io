@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-src 'none';">
+  <title>The Promethean Path</title>
+  <meta name="description" content="Exclusive advisor connections from the universities and firms you are targeting. Matched to your goals, ambitions and pathway. No connections required.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Promethean Path — Inside Access. No Connections Required.">
+  <meta property="og:description" content="Exclusive advisor connections from the universities and firms you are targeting. Matched to your goals, ambitions and pathway.">
+  <meta property="og:url" content="https://prometheanpath.github.io">
+  <meta property="og:image" content="https://prometheanpath.github.io/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Promethean Path — Inside Access. No Connections Required.">
+  <meta name="twitter:description" content="Exclusive advisor connections from the universities and firms you are targeting. Matched to your goals, ambitions and pathway.">
+  <meta name="twitter:image" content="https://prometheanpath.github.io/images/og-image.png">
+  <meta name="theme-color" content="#07101c">
+  <link rel="canonical" href="https://prometheanpath.github.io/">
+  <link rel="icon" href="animated-favicon.gif" type="image/gif">
+  <script src="animated-favicon.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAV -->
+  <header>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo-text">Promethean Path</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="apply.html" class="nav-cta">Apply</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile nav overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    <!-- Mobile nav menu -->
+    <div class="nav-mobile" id="navMobile">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="apply.html" class="nav-cta">Apply</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+    </div>
+    <canvas class="aurora-canvas" id="auroraCanvas" aria-hidden="true"></canvas>
+    <div class="hero-watermark" aria-hidden="true">PATH</div>
+
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Exclusive Advisor network &nbsp;·&nbsp; Est. 2024</p>
+
+      <h1 class="hero-headline">
+        <span class="lw"><span class="ll">Inside access.</span></span>
+        <span class="lw"><span class="ll hero-hl-2">No connections required.</span></span>
+      </h1>
+
+      <div class="hero-rule"></div>
+
+      <p class="hero-sub hero-sub--anim">
+        Exclusive advisor connections from the universities and firms you are targeting.
+        <span class="hero-sub-accent">Matched to your goals, ambitions and pathway.</span>
+      </p>
+
+      <a href="apply.html" class="hero-link hero-link--anim">
+        Apply Now <span class="arrow">→</span>
+      </a>
+
+      <div class="ab-scroll-cue">
+        <div class="ab-scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+      <span class="sv-vert-l" aria-hidden="true">VERIFIED</span>
+    <span class="sv-vert-r" aria-hidden="true">CURATED</span>
+
+  <!-- STATEMENT -->
+  <section class="statement-section">
+    <div class="statement-inner">
+      <div class="statement-aside">
+        <div class="s-bar"></div>
+        <p class="s-aside-label">Our belief</p>
+      </div>
+      <blockquote class="statement-body js-reveal">
+        Getting in has always been about who you know.<br>
+        <span class="statement-em">We change what that means.</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section js-stagger">
+    <div class="stat-item">
+      <span class="stat-num"><span class="count" data-target="1200">0</span>+</span>
+      <div class="stat-line"></div>
+      <p class="stat-lbl">Verified advisors in our network</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num"><span class="count" data-target="25">0</span>+</span>
+      <div class="stat-line"></div>
+      <p class="stat-lbl">Top Universities covered</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num"><span class="count" data-target="12">0</span></span>
+      <div class="stat-line"></div>
+      <p class="stat-lbl">Industries</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num stat-num--static">&lt;48 hrs</span>
+      <div class="stat-line"></div>
+      <p class="stat-lbl">Average match time</p>
+    </div>
+  </section>
+
+  <!-- UNIVERSITY TICKER -->
+  <section class="ticker-section">
+    <p class="ticker-label">Where our Advisors studied</p>
+    <div class="ticker-track">
+      <div class="ticker-inner">
+        <div class="ti"><img src="images/Oxford.png" alt="Oxford"></div>
+        <div class="ti"><img src="images/Cambridge.png" alt="Cambridge"></div>
+        <div class="ti"><img src="images/LSEE.jpg" alt="LSE"></div>
+        <div class="ti"><img src="images/S Andrew.png" alt="St Andrews"></div>
+        <div class="ti"><img src="images/Imperial.png" alt="Imperial"></div>
+        <div class="ti"><img src="images/Durham.png" alt="Durham"></div>
+        <div class="ti"><img src="images/Bath.png" alt="Bath"></div>
+        <div class="ti"><img src="images/UCL.png" alt="UCL"></div>
+        <div class="ti"><img src="images/Warwick.png" alt="Warwick"></div>
+        <div class="ti"><img src="images/Lancaster.jpg" alt="Lancaster"></div>
+        <div class="ti"><img src="images/Manchester.png" alt="Manchester"></div>
+        <div class="ti"><img src="images/Leeds.png" alt="Leeds"></div>
+        <div class="ti"><img src="images/Bristol.jpg" alt="Bristol"></div>
+        <div class="ti"><img src="images/York.png" alt="York"></div>
+        <div class="ti"><img src="images/Edinbrugh.png" alt="Edinburgh"></div>
+        <div class="ti"><img src="images/Kings.png" alt="King's College London"></div>
+        <div class="ti"><img src="images/Oxford.png" alt="Oxford"></div>
+        <div class="ti"><img src="images/Cambridge.png" alt="Cambridge"></div>
+        <div class="ti"><img src="images/LSEE.jpg" alt="LSE"></div>
+        <div class="ti"><img src="images/S Andrew.png" alt="St Andrews"></div>
+        <div class="ti"><img src="images/Imperial.png" alt="Imperial"></div>
+        <div class="ti"><img src="images/Durham.png" alt="Durham"></div>
+        <div class="ti"><img src="images/Bath.png" alt="Bath"></div>
+        <div class="ti"><img src="images/UCL.png" alt="UCL"></div>
+        <div class="ti"><img src="images/Warwick.png" alt="Warwick"></div>
+        <div class="ti"><img src="images/Lancaster.jpg" alt="Lancaster"></div>
+        <div class="ti"><img src="images/Manchester.png" alt="Manchester"></div>
+        <div class="ti"><img src="images/Leeds.png" alt="Leeds"></div>
+        <div class="ti"><img src="images/Bristol.jpg" alt="Bristol"></div>
+        <div class="ti"><img src="images/York.png" alt="York"></div>
+        <div class="ti"><img src="images/Edinbrugh.png" alt="Edinburgh"></div>
+        <div class="ti"><img src="images/Kings.png" alt="King's College London"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="hiw-section">
+    <div class="hiw-header js-reveal">
+      <p class="section-tag">How it works</p>
+      <h2 class="hiw-title">A path built around the right person.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-step js-reveal">
+        <div class="ts-left">
+          <span class="ts-num">01</span>
+          <div class="ts-rule"></div>
+        </div>
+        <div class="ts-right">
+          <h3>Share your ambitions</h3>
+          <p>Tell us your target universities, degrees, and career aspirations. The more specific you are, the more precisely we can match you.</p>
+        </div>
+      </div>
+      <div class="timeline-step js-reveal">
+        <div class="ts-left">
+          <span class="ts-num">02</span>
+          <div class="ts-rule"></div>
+        </div>
+        <div class="ts-right">
+          <h3>We identify your match</h3>
+          <p>We connect you with a hand-selected advisors who potentially studied your exact degree at your target university and now holds the role you are pursuing, carefully curated for your specific path.</p>
+        </div>
+      </div>
+      <div class="timeline-step js-reveal">
+        <div class="ts-left">
+          <span class="ts-num">03</span>
+          <div class="ts-rule"></div>
+        </div>
+        <div class="ts-right">
+          <h3>Gain insider perspective</h3>
+          <p>Access the conversations most students never have. Real, honest, unfiltered insight from someone who has already walked the path you are charting.</p>
+        </div>
+      </div>
+      <div class="timeline-step js-reveal">
+        <div class="ts-left">
+          <span class="ts-num">04</span>
+        </div>
+        <div class="ts-right">
+          <h3>Apply with confidence</h3>
+          <p>A clear plan, a real network, and the confidence of someone who knows the room. Approach every application differently from this point on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY TICKER -->
+  <section class="ticker-section ticker-section--alt">
+    <p class="ticker-label">Where our advisors work</p>
+    <div class="ticker-track">
+      <div class="ticker-inner ticker-inner--r">
+        <div class="ti"><img src="images/GS.png" alt="Goldman Sachs"></div>
+        <div class="ti"><img src="images/UBS.png" alt="UBS"></div>
+        <div class="ti"><img src="images/Rothschild.png" alt="Rothschild"></div>
+        <div class="ti"><img src="images/Citi.png" alt="Citi"></div>
+        <div class="ti"><img src="images/HSBC.png" alt="HSBC"></div>
+        <div class="ti"><img src="images/McK.png" alt="McKinsey"></div>
+        <div class="ti"><img src="images/BCG.png" alt="BCG"></div>
+        <div class="ti"><img src="images/Baringa.jpg" alt="Baringa"></div>
+        <div class="ti"><img src="images/Linklaters.png" alt="Linklaters"></div>
+        <div class="ti"><img src="images/A&O.png" alt="A&O"></div>
+        <div class="ti"><img src="images/NRF.png" alt="NRF"></div>
+        <div class="ti"><img src="images/Latham.png" alt="Latham"></div>
+        <div class="ti"><img src="images/DLA.jpg" alt="DLA Piper"></div>
+        <div class="ti"><img src="images/Disney.png" alt="Disney"></div>
+        <div class="ti"><img src="images/Toyota.png" alt="Toyota"></div>
+        <div class="ti"><img src="images/Shroders.png" alt="Schroders"></div>
+        <div class="ti"><img src="images/GS.png" alt="Goldman Sachs"></div>
+        <div class="ti"><img src="images/UBS.png" alt="UBS"></div>
+        <div class="ti"><img src="images/Rothschild.png" alt="Rothschild"></div>
+        <div class="ti"><img src="images/Citi.png" alt="Citi"></div>
+        <div class="ti"><img src="images/HSBC.png" alt="HSBC"></div>
+        <div class="ti"><img src="images/McK.png" alt="McKinsey"></div>
+        <div class="ti"><img src="images/BCG.png" alt="BCG"></div>
+        <div class="ti"><img src="images/Baringa.jpg" alt="Baringa"></div>
+        <div class="ti"><img src="images/Linklaters.png" alt="Linklaters"></div>
+        <div class="ti"><img src="images/A&O.png" alt="A&O"></div>
+        <div class="ti"><img src="images/NRF.png" alt="NRF"></div>
+        <div class="ti"><img src="images/Latham.png" alt="Latham"></div>
+        <div class="ti"><img src="images/DLA.jpg" alt="DLA Piper"></div>
+        <div class="ti"><img src="images/Disney.png" alt="Disney"></div>
+        <div class="ti"><img src="images/Toyota.png" alt="Toyota"></div>
+        <div class="ti"><img src="images/Shroders.png" alt="Schroders"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing-section">
+    <div class="closing-glow closing-glow--1"></div>
+    <div class="closing-glow closing-glow--2"></div>
+    <div class="closing-inner js-reveal">
+      <p class="hero-eyebrow" style="margin-bottom:32px;">Start today</p>
+      <h2 class="closing-headline">
+        <span class="lw"><span class="ll">One Conversation.</span></span>
+        <span class="lw"><span class="ll">One Advisor. Changes everything.</span></span>
+      </h2>
+      <p class="closing-sub">Mentorship and guidance built around where you want to go next.</p>
+      <a href="apply.html" class="hero-link closing-cta-link">
+        Apply Now <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">Promethean Path</p>
+      <p class="footer-copy">
+        &copy; 2026 The Promethean Path &nbsp;|&nbsp;
+        <a href="privacy.html" style="color: rgba(240,230,205,0.7); text-decoration: underline;">Privacy Policy</a>
+        &nbsp;|&nbsp;
+        <a href="terms.html" style="color: rgba(240,230,205,0.7); text-decoration: underline;">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Go to top" style="color:rgb(120,195,240)">
+    <i class="fas fa-angle-double-up"></i>
+  </button>
+
+  <script>
+  /* ── Mobile Navigation ────────────────────────────────────── */
+  (function() {
+    var toggle = document.getElementById('navToggle');
+    var overlay = document.getElementById('navOverlay');
+    var mobile = document.getElementById('navMobile');
+    var body = document.body;
+    var mobileLinks = mobile ? mobile.querySelectorAll('a') : [];
+
+    function openNav() {
+      toggle.classList.add('active');
+      overlay.classList.add('active');
+      mobile.classList.add('active');
+      body.classList.add('nav-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeNav() {
+      toggle.classList.remove('active');
+      overlay.classList.remove('active');
+      mobile.classList.remove('active');
+      body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    if (toggle) toggle.addEventListener('click', function() {
+      if (mobile.classList.contains('active')) {
+        closeNav();
+      } else {
+        openNav();
+      }
+    });
+
+    if (overlay) overlay.addEventListener('click', closeNav);
+
+    // Close on link click
+    mobileLinks.forEach(function(link) {
+      link.addEventListener('click', closeNav);
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mobile.classList.contains('active')) {
+        closeNav();
+      }
+    });
+  })();
+
+  /* ── Constellation Network ───────────────────────────────── */
+  (function () {
+    var canvas = document.getElementById('auroraCanvas');
+    var ctx    = canvas.getContext('2d');
+    var pts    = [];   // star nodes
+    var beams  = [];   // active traveling connectors
+    var lines  = [];   // established connections (persist while in range)
+    var sparks = [];   // impact particles
+    var frame  = 0;
+    var REACH  = 160;  // max connection distance
+    var MAX_B  = 8;    // max simultaneous beams
+
+    function init() {
+      canvas.width  = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      pts = []; beams = []; lines = []; sparks = [];
+      frame = 0;
+      for (var i = 0; i < 55; i++) {
+        pts.push({
+          x:  Math.random() * canvas.width,
+          y:  Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.25,
+          vy: (Math.random() - 0.5) * 0.25,
+          r:  0.9 + Math.random() * 1.4
+        });
+      }
+    }
+
+    function spawnSpark(x, y) {
+      for (var k = 0; k < 5; k++) {
+        var a = Math.random() * Math.PI * 2;
+        var s = 0.35 + Math.random() * 0.75;
+        sparks.push({
+          x: x, y: y,
+          vx: Math.cos(a) * s, vy: Math.sin(a) * s,
+          life: 1.0,
+          decay: 0.045 + Math.random() * 0.04,
+          size: 0.5 + Math.random() * 1.0
+        });
+      }
+    }
+
+    function isLinked(a, b) {
+      for (var l = 0; l < lines.length; l++) {
+        if ((lines[l].fi === a && lines[l].ti === b) ||
+            (lines[l].fi === b && lines[l].ti === a)) return true;
+      }
+      return false;
+    }
+
+    function isBeaming(a, b) {
+      for (var k = 0; k < beams.length; k++) {
+        if ((beams[k].fi === a && beams[k].ti === b) ||
+            (beams[k].fi === b && beams[k].ti === a)) return true;
+      }
+      return false;
+    }
+
+    function trySpawnBeam() {
+      if (beams.length >= MAX_B) return;
+      var fi = Math.floor(Math.random() * pts.length);
+      var p  = pts[fi];
+      var candidates = [];
+      for (var j = 0; j < pts.length; j++) {
+        if (j === fi) continue;
+        var dx = p.x - pts[j].x, dy = p.y - pts[j].y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < REACH && dist > 28 && !isLinked(fi, j) && !isBeaming(fi, j)) {
+          candidates.push(j);
+        }
+      }
+      if (!candidates.length) return;
+      var ti = candidates[Math.floor(Math.random() * candidates.length)];
+      beams.push({ fi: fi, ti: ti, t: 0, dur: 25 + Math.floor(Math.random() * 25) });
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      frame++;
+
+      /* move dots */
+      for (var i = 0; i < pts.length; i++) {
+        var p = pts[i];
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+      }
+
+      /* try to launch a new beam every ~10 frames */
+      if (frame % 10 === 0) trySpawnBeam();
+
+      /* persistent constellation lines — break only when dots drift out of range */
+      for (var l = lines.length - 1; l >= 0; l--) {
+        var ln = lines[l];
+        var fp = pts[ln.fi], tp = pts[ln.ti];
+        var dx = fp.x - tp.x, dy = fp.y - tp.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist > REACH * 1.18) { lines.splice(l, 1); continue; }
+        var alpha = (1 - dist / REACH) * 0.28;
+        ctx.beginPath();
+        ctx.moveTo(fp.x, fp.y);
+        ctx.lineTo(tp.x, tp.y);
+        ctx.strokeStyle = 'rgba(140,185,235,' + alpha.toFixed(3) + ')';
+        ctx.lineWidth = 0.8;
+        ctx.stroke();
+      }
+
+      /* star dots */
+      for (var i = 0; i < pts.length; i++) {
+        var p = pts[i];
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(140,185,235,0.78)';
+        ctx.fill();
+      }
+
+      /* traveling beams */
+      for (var b = beams.length - 1; b >= 0; b--) {
+        var bm   = beams[b];
+        bm.t++;
+        var prog = Math.min(bm.t / bm.dur, 1);
+        var fp   = pts[bm.fi], tp = pts[bm.ti];
+        var cx   = fp.x + (tp.x - fp.x) * prog;
+        var cy   = fp.y + (tp.y - fp.y) * prog;
+
+        /* line drawn so far */
+        ctx.beginPath();
+        ctx.moveTo(fp.x, fp.y);
+        ctx.lineTo(cx, cy);
+        ctx.strokeStyle = 'rgba(160,205,255,0.42)';
+        ctx.lineWidth = 0.9;
+        ctx.stroke();
+
+        /* leading glow dot */
+        ctx.beginPath();
+        ctx.arc(cx, cy, 1.8, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(210,235,255,0.95)';
+        ctx.fill();
+
+        if (prog >= 1) {
+          spawnSpark(tp.x, tp.y);
+          /* only add the line if the dots are still in range */
+          var ddx = fp.x - tp.x, ddy = fp.y - tp.y;
+          if (Math.sqrt(ddx*ddx + ddy*ddy) < REACH) {
+            lines.push({ fi: bm.fi, ti: bm.ti });
+          }
+          beams.splice(b, 1);
+        }
+      }
+
+      /* sparks */
+      for (var s = sparks.length - 1; s >= 0; s--) {
+        var sp = sparks[s];
+        sp.x += sp.vx; sp.y += sp.vy;
+        sp.life -= sp.decay;
+        if (sp.life <= 0) { sparks.splice(s, 1); continue; }
+        ctx.beginPath();
+        ctx.arc(sp.x, sp.y, sp.size * sp.life, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(200,230,255,' + (sp.life * 0.88).toFixed(3) + ')';
+        ctx.fill();
+      }
+    }
+
+    window.addEventListener('resize', init);
+    init();
+    animate();
+  })();
+
+  /* ── Page JS ─────────────────────────────────────────────── */
+  (function () {
+
+    var bar   = document.getElementById('scrollProgress');
+    var nav   = document.getElementById('nav');
+    var heroH = document.querySelector('.hero').offsetHeight;
+
+    function tick() {
+      var sy  = window.scrollY;
+      var max = document.body.scrollHeight - window.innerHeight;
+      bar.style.width = (max > 0 ? (sy / max) * 100 : 0) + '%';
+      nav.classList.toggle('nav--light', sy > heroH * 0.78);
+      document.getElementById('backToTopBtn').style.display = sy > 500 ? 'block' : 'none';
+    }
+
+    window.addEventListener('scroll', tick, { passive: true });
+    tick();
+
+    /* Closing line reveal */
+    var closingLls  = document.querySelectorAll('.closing-section .ll');
+    var closingDone = false;
+    new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting && !closingDone) {
+        closingDone = true;
+        closingLls.forEach(function (ll, i) {
+          ll.style.animationDelay = (0.1 + i * 0.16) + 's';
+          ll.classList.add('ll--run');
+        });
+      }
+    }, { threshold: 0.3 }).observe(document.querySelector('.closing-section'));
+
+    /* Generic reveal */
+    var revealIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); revealIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
+
+    document.querySelectorAll('.js-reveal, .js-stagger').forEach(function (el) { revealIO.observe(el); });
+
+    /* CountUp */
+    var countIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { animateCount(e.target); countIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.count').forEach(function (el) { countIO.observe(el); });
+
+    function animateCount(el) {
+      var target = parseInt(el.dataset.target, 10);
+      var steps = 60, step = 0;
+      var id = setInterval(function () {
+        step++;
+        var eased = 1 - Math.pow(1 - step / steps, 3);
+        el.textContent = Math.round(eased * target).toLocaleString();
+        if (step >= steps) { el.textContent = target.toLocaleString(); clearInterval(id); }
+      }, 1800 / steps);
+    }
+
+    window.topFunction = function () { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+
+  })();
+  </script>
+
+  <div id="cookie-banner" style="position: fixed; bottom: 1.5rem; right: 1.5rem; background: #fff; color: #111; padding: 1.25rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 28px rgba(0,0,0,0.22); max-width: 300px; z-index: 9999; display: none; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+    <p style="margin: 0 0 0.4rem 0; font-weight: 700; font-size: 15px;">Cookie Notice</p>
+    <p style="margin: 0 0 1rem 0; color: #444;">We use cookies to analyze site traffic and improve your experience. <a href="privacy.html" style="color: #1a56a0;">Privacy Policy</a></p>
+    <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+      <button onclick="declineCookies()" style="background: transparent; color: #666; border: 1px solid #ddd; padding: 0.4rem 0.9rem; cursor: pointer; border-radius: 6px; font-size: 13px;">Decline</button>
+      <button onclick="acceptCookies()" style="background: #111; color: #fff; border: none; padding: 0.4rem 0.9rem; cursor: pointer; border-radius: 6px; font-size: 13px; font-weight: 600;">Accept</button>
+    </div>
+  </div>
+  <script>
+  (function() {
+    function loadGA() {
+      if (window._gaLoaded) return;
+      window._gaLoaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4CQ2CBR0C9';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function() { window.dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-4CQ2CBR0C9');
+    }
+    window.acceptCookies = function() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA();
+    };
+    window.declineCookies = function() {
+      localStorage.setItem('cookiesAccepted', 'false');
+      document.getElementById('cookie-banner').style.display = 'none';
+    };
+    if (localStorage.getItem('cookiesAccepted') === 'true') { loadGA(); }
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  })();
+  </script>
+
+</body>
+</html>

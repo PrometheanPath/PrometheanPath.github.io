@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-src 'none';">
+  <title>Services – The Promethean Path</title>
+  <meta name="description" content="Explore our services: university advisor connections, career guidance, personal statement review, CV review and more. The Promethean Path.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services – The Promethean Path">
+  <meta property="og:description" content="University advisor connections, career guidance, personal statement review, CV review and more — all matched to your goals.">
+  <meta property="og:url" content="https://prometheanpath.github.io/services.html">
+  <meta property="og:image" content="https://prometheanpath.github.io/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services – The Promethean Path">
+  <meta name="twitter:description" content="University advisor connections, career guidance, personal statement review, CV review and more — all matched to your goals.">
+  <meta name="twitter:image" content="https://prometheanpath.github.io/images/og-image.png">
+  <meta name="theme-color" content="#07101c">
+  <link rel="canonical" href="https://prometheanpath.github.io/services.html">
+  <link rel="icon" href="animated-favicon.gif" type="image/gif">
+  <script src="animated-favicon.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo-text">Promethean Path</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="apply.html" class="nav-cta">Apply</a>
+      </div>
+    </div>
+    <!-- Mobile nav overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    <!-- Mobile nav menu -->
+    <div class="nav-mobile" id="navMobile">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="apply.html" class="nav-cta">Apply</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────────── -->
+  <section class="sv-hero">
+    <div class="sv-hero-glow sv-hero-glow--1"></div>
+    <div class="sv-hero-glow sv-hero-glow--2"></div>
+
+    <canvas id="svRadar" class="sv-radar-canvas" aria-hidden="true"></canvas>
+
+    <span class="sv-vert-l" aria-hidden="true">VERIFIED</span>
+    <span class="sv-vert-r" aria-hidden="true">CURATED</span>
+
+    <div class="sv-hero-center">
+      <p class="ab-eyebrow">Exclusive advisor network &nbsp;·&nbsp; Five pathways</p>
+
+      <h1 class="sv-headline">
+        <span class="lw"><span class="ll">The right person.</span></span>
+        <span class="lw"><span class="ll sv-ll-accent">Already knows the way.</span></span>
+      </h1>
+
+      <div class="ab-rule"></div>
+
+      <p class="sv-sub">
+        Matched to advisors who potentially studied your exact degree, entered your target industry,<br>
+        and are ready to share what actually works.
+      </p>
+
+      <div class="ab-scroll-cue">
+        <div class="ab-scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATEMENT ─────────────────────────────────────── -->
+  <section class="statement-section">
+    <div class="statement-inner">
+      <div class="statement-aside">
+        <div class="s-bar"></div>
+        <p class="s-aside-label">What we offer</p>
+      </div>
+      <blockquote class="statement-body js-reveal">
+        Most guidance tells you what to aim for.<br>
+        <span class="statement-em">We find someone who has already achieved it.</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ── SERVICES LIST ──────────────────────────────────── -->
+  <section class="sv-list">
+    <div class="sv-list-inner">
+
+      <div class="sv-list-head js-reveal">
+        <p class="ab-data-tag">What we do</p>
+        <h2 class="sv-list-title">Seven ways we help you succeed.</h2>
+      </div>
+
+      <div class="sv-rows js-reveal">
+
+        <div class="sv-row">
+          <div class="sv-row-head">
+            <span class="sv-row-num">01</span>
+            <h3 class="sv-row-name">University Advisor Connection</h3>
+            <div class="sv-row-rule" aria-hidden="true"></div>
+          </div>
+          <p class="sv-row-body">Connect with advisors from your exact target university who potentially studied your degree. Get real insights into what the course, campus, and culture are actually like, from people who have already made the decisions you are trying to make.</p>
+        </div>
+
+        <div class="sv-row">
+          <div class="sv-row-head">
+            <span class="sv-row-num">02</span>
+            <h3 class="sv-row-name">Career Advisor Connection</h3>
+            <div class="sv-row-rule" aria-hidden="true"></div>
+          </div>
+          <p class="sv-row-body">Connect with advisors who recently studied your path and now hold the roles you are aiming for. Understand what the hiring process actually involves, what firms are genuinely looking for, and the decisions that shaped their route from student to professional.</p>
+        </div>
+
+        <div class="sv-row">
+          <div class="sv-row-head">
+            <span class="sv-row-num">03</span>
+            <h3 class="sv-row-name">Career Application Guidance</h3>
+            <div class="sv-row-rule" aria-hidden="true"></div>
+          </div>
+          <p class="sv-row-body">Get clarity on what firms and early career recruiters are actually looking for, from people who have already been through it. We demystify Assessment Centres, Superdays, video and in-person interviews, written exercises, online assessments and the selection criteria before you even walk in.</p>
+        </div>
+
+        <div class="sv-row">
+          <div class="sv-row-head">
+            <span class="sv-row-num">04</span>
+            <h3 class="sv-row-name">Personal Statement Review</h3>
+            <div class="sv-row-rule" aria-hidden="true"></div>
+          </div>
+          <p class="sv-row-body">Get direct, honest feedback on your personal statement from people who know what admissions teams actually want to see. No generic advice, instead specific input from those who went through the same process and know what works.</p>
+        </div>
+
+        <div class="sv-row">
+          <div class="sv-row-head">
+            <span class="sv-row-num">05</span>
+            <h3 class="sv-row-name">CV &amp; Cover Letter Review</h3>
+            <div class="sv-row-rule" aria-hidden="true"></div>
+          </div>
+          <p class="sv-row-body">Get a professional polish on your application materials. Get feedback from people who understand what graduate recruiters look for and how to make your experiences stand out on paper.</p>
+        </div>
+
+        <div class="sv-row">
+          <div class="sv-row-head">
+            <span class="sv-row-num">06</span>
+            <h3 class="sv-row-name">Academic Performance</h3>
+            <div class="sv-row-rule" aria-hidden="true"></div>
+          </div>
+          <p class="sv-row-body">Get guidance on how to consistently perform at the highest level at university by learning the study habits, exam techniques, and approaches used by first-class students, plus receive detailed feedback on your Formatives, Summatives, and Dissertations.</p>
+        </div>
+
+        <div class="sv-row">
+          <div class="sv-row-head">
+            <span class="sv-row-num">07</span>
+            <h3 class="sv-row-name">General Guidance</h3>
+            <div class="sv-row-rule" aria-hidden="true"></div>
+          </div>
+          <p class="sv-row-body">Unsure about what you need? Connect with us and we will help you figure out the best way we can support you, whether that is with one of the above or something more specific to your situation.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ADVISOR TICKER ──────────────────────────────────── -->
+  <section class="sv-alumni">
+    <p class="sv-alumni-label">Who is in our network</p>
+    <div class="sv-alumni-track">
+      <div class="sv-alumni-inner">
+
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Oxford</p><p class="sv-profile-course">Philosophy, Politics &amp; Economics</p><p class="sv-profile-role">IB Analyst &middot; Rothschild</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">King's College London</p><p class="sv-profile-course">Business &amp; Management</p><p class="sv-profile-role">Trainee Solicitor &middot; A&amp;O Shearman</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">London School of Economics</p><p class="sv-profile-course">Economics</p><p class="sv-profile-role">Associate &middot; McKinsey &amp; Company</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Cambridge</p><p class="sv-profile-course">Law</p><p class="sv-profile-role">Trainee Solicitor &middot; Linklaters</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">Imperial College London</p><p class="sv-profile-course">Engineering</p><p class="sv-profile-role">Consultant &middot; BCG</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">Durham University</p><p class="sv-profile-course">Economics</p><p class="sv-profile-role">Analyst &middot; Goldman Sachs</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University College London</p><p class="sv-profile-course">Management Science</p><p class="sv-profile-role">IB Analyst &middot; BNY Mellon</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Warwick</p><p class="sv-profile-course">Accounting &amp; Finance</p><p class="sv-profile-role">Graduate Trainee &middot; KPMG</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Bristol</p><p class="sv-profile-course">Law</p><p class="sv-profile-role">Trainee Solicitor &middot; Clifford Chance</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Edinburgh</p><p class="sv-profile-course">International Relations</p><p class="sv-profile-role">Civil Service Fast Stream</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of St Andrews</p><p class="sv-profile-course">Economics &amp; Finance</p><p class="sv-profile-role">Analyst &middot; UBS</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Manchester</p><p class="sv-profile-course">Computer Science</p><p class="sv-profile-role">Technology Analyst &middot; Citi</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Bath</p><p class="sv-profile-course">Business Administration</p><p class="sv-profile-role">Commercial Graduate &middot; Unilever</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Nottingham</p><p class="sv-profile-course">Law</p><p class="sv-profile-role">Training Contract &middot; DLA Piper</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Leeds</p><p class="sv-profile-course">Business &amp; Management</p><p class="sv-profile-role">Graduate Consultant &middot; Deloitte</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Birmingham</p><p class="sv-profile-course">Economics</p><p class="sv-profile-role">Graduate Analyst &middot; Barclays</p></div></div>
+
+        <!-- Duplicate for seamless loop -->
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Oxford</p><p class="sv-profile-course">Philosophy, Politics &amp; Economics</p><p class="sv-profile-role">IB Analyst &middot; Rothschild</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">King's College London</p><p class="sv-profile-course">Business &amp; Management</p><p class="sv-profile-role">Trainee Solicitor &middot; A&amp;O Shearman</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">London School of Economics</p><p class="sv-profile-course">Economics</p><p class="sv-profile-role">Associate &middot; McKinsey &amp; Company</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Cambridge</p><p class="sv-profile-course">Law</p><p class="sv-profile-role">Trainee Solicitor &middot; Linklaters</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">Imperial College London</p><p class="sv-profile-course">Engineering</p><p class="sv-profile-role">Consultant &middot; BCG</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">Durham University</p><p class="sv-profile-course">Economics</p><p class="sv-profile-role">Analyst &middot; Goldman Sachs</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University College London</p><p class="sv-profile-course">Management Science</p><p class="sv-profile-role">IB Analyst &middot; BNY Mellon</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Warwick</p><p class="sv-profile-course">Accounting &amp; Finance</p><p class="sv-profile-role">Graduate Trainee &middot; KPMG</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Bristol</p><p class="sv-profile-course">Law</p><p class="sv-profile-role">Trainee Solicitor &middot; Clifford Chance</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Edinburgh</p><p class="sv-profile-course">International Relations</p><p class="sv-profile-role">Civil Service Fast Stream</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of St Andrews</p><p class="sv-profile-course">Economics &amp; Finance</p><p class="sv-profile-role">Analyst &middot; UBS</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Manchester</p><p class="sv-profile-course">Computer Science</p><p class="sv-profile-role">Technology Analyst &middot; Citi</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Bath</p><p class="sv-profile-course">Business Administration</p><p class="sv-profile-role">Commercial Graduate &middot; Unilever</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Nottingham</p><p class="sv-profile-course">Law</p><p class="sv-profile-role">Training Contract &middot; DLA Piper</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Leeds</p><p class="sv-profile-course">Business &amp; Management</p><p class="sv-profile-role">Graduate Consultant &middot; Deloitte</p></div></div>
+        <div class="sv-profile"><div class="sv-profile-avatar"></div><div class="sv-profile-info"><p class="sv-profile-uni">University of Birmingham</p><p class="sv-profile-course">Economics</p><p class="sv-profile-role">Graduate Analyst &middot; Barclays</p></div></div>
+
+      </div><!-- /.sv-alumni-inner -->
+    </div><!-- /.sv-alumni-track -->
+  </section>
+
+  <!-- ── SECTORS ────────────────────────────────────────── -->
+  <section class="sv-sectors">
+    <div class="sv-sectors-inner">
+
+      <div class="sv-sectors-head js-reveal">
+        <p class="ab-data-tag">Where we operate</p>
+        <h2 class="sv-sectors-title">Six pathways with comprehensive support.</h2>
+      </div>
+
+      <div class="sv-sectors-grid">
+
+        <div class="sv-sector js-reveal">
+          <span class="sv-sector-num">01</span>
+          <div class="sv-sector-line"></div>
+          <h3 class="sv-sector-name">Corporate Law</h3>
+          <p class="sv-sector-body">Training contracts, vacation schemes, case study prep and interview coaching at the world's leading law firms.</p>
+        </div>
+
+        <div class="sv-sector js-reveal">
+          <span class="sv-sector-num">02</span>
+          <div class="sv-sector-line"></div>
+          <h3 class="sv-sector-name">Investment Banking</h3>
+          <p class="sv-sector-body">Technical skills, assessment centres and networking sequences for Goldman Sachs, Rothschild, Citi and beyond.</p>
+        </div>
+
+        <div class="sv-sector js-reveal">
+          <span class="sv-sector-num">03</span>
+          <div class="sv-sector-line"></div>
+          <h3 class="sv-sector-name">Management Consulting</h3>
+          <p class="sv-sector-body">Case interview practice, fit coaching and leadership experience mapping for MBB and tier-two firms.</p>
+        </div>
+
+        <div class="sv-sector js-reveal">
+          <span class="sv-sector-num">04</span>
+          <div class="sv-sector-line"></div>
+          <h3 class="sv-sector-name">Accounting & Professional Services</h3>
+          <p class="sv-sector-body">ACA and ACCA training routes, Big Four graduate schemes, and honest insight into audit, tax and advisory from those already on the path at KPMG, Deloitte, PwC and EY.</p>
+        </div>
+
+        <div class="sv-sector js-reveal">
+          <span class="sv-sector-num">05</span>
+          <div class="sv-sector-line"></div>
+          <h3 class="sv-sector-name">Technology & Engineering</h3>
+          <p class="sv-sector-body">Graduate schemes, software engineering rotations and internship pipelines at leading tech firms and the technology divisions of major financial institutions.</p>
+        </div>
+
+        <div class="sv-sector js-reveal">
+          <span class="sv-sector-num">06</span>
+          <div class="sv-sector-line"></div>
+          <h3 class="sv-sector-name">Finance & Asset Management</h3>
+          <p class="sv-sector-body">Graduate schemes to specialist roles. Insight into hiring at Schroders, BlackRock, and the leading asset managers.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY ────────────────────────────────────────────── -->
+  <section class="ab-why">
+    <div class="ab-why-inner">
+
+      <div class="ab-why-block js-reveal">
+        <div class="ab-why-aside">
+          <div class="s-bar"></div>
+          <p class="s-aside-label">Why it works</p>
+        </div>
+        <div class="ab-why-text">
+          <h2 class="ab-why-title">
+            You already know your goal.<br>
+            <span class="sv-why-accent js-sv-typecast" data-text="What's missing is someone who has reached it."></span>
+          </h2>
+          <p class="ab-why-body">Knowing what to aim for is not the problem. Understanding exactly how to get there, the decisions, sequences and moments that matter, is what most students are navigating without support. We change that.</p>
+        </div>
+      </div>
+
+      <div class="ab-why-divider js-reveal"></div>
+
+      <div class="ab-why-block js-reveal">
+        <div class="ab-why-aside">
+          <div class="s-bar"></div>
+          <p class="s-aside-label">How we match</p>
+        </div>
+        <div class="ab-why-text">
+          <h2 class="ab-why-title">
+            No endless searching.<br>
+            <span class="sv-why-accent js-sv-typecast" data-text="One introduction. Done exactly right."></span>
+          </h2>
+          <p class="ab-why-body">We read what you are aiming for and find someone specifically verified, experienced and available. Someone who studied where you want to study, and now works where you want to work. Then we step back and let the conversation happen.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CLOSING ────────────────────────────────────────── -->
+  <section class="closing-section">
+    <div class="closing-glow closing-glow--1"></div>
+    <div class="closing-glow closing-glow--2"></div>
+    <div class="closing-inner js-reveal">
+      <p class="hero-eyebrow" style="margin-bottom:32px;">Ready when you are</p>
+      <h2 class="closing-headline">
+        <span class="lw"><span class="ll">Get personalised guidance<br>tailored to your ambitions</span></span>
+      </h2>
+      <p class="closing-sub">We craft distinctive strategies for your success and connect you with hand-selected advisors from your target universities and firms. Everything you share remains completely confidential.</p>
+      <a href="apply.html" class="hero-link closing-cta-link">
+        Apply Now <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">Promethean Path</p>
+      <p class="footer-copy">
+        &copy; 2026 The Promethean Path &nbsp;|&nbsp;
+        <a href="privacy.html" style="color: rgba(240,230,205,0.7); text-decoration: underline;">Privacy Policy</a>
+        &nbsp;|&nbsp;
+        <a href="terms.html" style="color: rgba(240,230,205,0.7); text-decoration: underline;">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+  /* ── Mobile Navigation ────────────────────────────────────── */
+  (function() {
+    var toggle = document.getElementById('navToggle');
+    var overlay = document.getElementById('navOverlay');
+    var mobile = document.getElementById('navMobile');
+    var body = document.body;
+    var mobileLinks = mobile ? mobile.querySelectorAll('a') : [];
+
+    function openNav() {
+      toggle.classList.add('active');
+      overlay.classList.add('active');
+      mobile.classList.add('active');
+      body.classList.add('nav-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeNav() {
+      toggle.classList.remove('active');
+      overlay.classList.remove('active');
+      mobile.classList.remove('active');
+      body.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    if (toggle) toggle.addEventListener('click', function() {
+      if (mobile.classList.contains('active')) {
+        closeNav();
+      } else {
+        openNav();
+      }
+    });
+
+    if (overlay) overlay.addEventListener('click', closeNav);
+
+    mobileLinks.forEach(function(link) {
+      link.addEventListener('click', closeNav);
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mobile.classList.contains('active')) {
+        closeNav();
+      }
+    });
+  })();
+
+  (function () {
+
+    /* Flow field */
+    var canvas = document.getElementById('svRadar');
+    var ctx    = canvas.getContext('2d');
+    var particles = [];
+    var flowTime  = 0;
+    var NUM_P = 200;
+    var TRAIL_LEN = 200;
+
+    function resize() {
+      canvas.width  = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      initParticles();
+    }
+
+    function initParticles() {
+      particles = [];
+      for (var i = 0; i < NUM_P; i++) {
+        var x = Math.random() * canvas.width;
+        var y = Math.random() * canvas.height;
+        var hist = [];
+        for (var t = 0; t < TRAIL_LEN; t++) hist.push({ x: x, y: y });
+        particles.push({
+          x: x, y: y,
+          history: hist,
+          speed: 0.5 + Math.random() * 0.9,
+          alpha: 0.12 + Math.random() * 0.28,
+          size:  0.7 + Math.random() * 0.9,
+          age:   Math.floor(Math.random() * 120)
+        });
+      }
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+
+    function flowAngle(x, y, t) {
+      return Math.sin(x * 0.0035 + t * 0.28) * Math.cos(y * 0.0035 + t * 0.18) * Math.PI * 2
+           + Math.sin(x * 0.007  - y * 0.005 + t * 0.12) * Math.PI;
+    }
+
+    (function drawFlow() {
+      requestAnimationFrame(drawFlow);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      flowTime += 0.004;
+
+      particles.forEach(function (p) {
+        var a = flowAngle(p.x, p.y, flowTime);
+        p.x  += Math.cos(a) * p.speed;
+        p.y  += Math.sin(a) * p.speed;
+        p.age++;
+
+        p.history.push({ x: p.x, y: p.y });
+        if (p.history.length > TRAIL_LEN) p.history.shift();
+
+        if (p.x < -2 || p.x > canvas.width + 2 || p.y < -2 || p.y > canvas.height + 2) {
+          p.x = Math.random() * canvas.width;
+          p.y = Math.random() * canvas.height;
+          p.age = 0;
+          p.history.forEach(function (h) { h.x = p.x; h.y = p.y; });
+        }
+
+        var fade = Math.min(p.age / 40, 1);
+        for (var k = 1; k < p.history.length; k++) {
+          var tt  = k / p.history.length;
+          var a2  = p.alpha * tt * tt * fade;
+          ctx.beginPath();
+          ctx.moveTo(p.history[k - 1].x, p.history[k - 1].y);
+          ctx.lineTo(p.history[k].x,     p.history[k].y);
+          ctx.strokeStyle = 'rgba(106, 188, 155, ' + a2 + ')';
+          ctx.lineWidth   = p.size * tt;
+          ctx.lineCap     = 'round';
+          ctx.stroke();
+        }
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(140, 220, 185, ' + (p.alpha * fade) + ')';
+        ctx.fill();
+      });
+    })();
+
+    var bar    = document.getElementById('scrollProgress');
+    var nav    = document.getElementById('nav');
+    var heroEl = document.querySelector('.sv-hero');
+
+    function tick() {
+      var sy  = window.scrollY;
+      var max = document.body.scrollHeight - window.innerHeight;
+      bar.style.width = (max > 0 ? (sy / max) * 100 : 0) + '%';
+      nav.classList.toggle('nav--light', sy > heroEl.offsetHeight * 0.78);
+    }
+    window.addEventListener('scroll', tick, { passive: true });
+    tick();
+
+    /* Closing line reveal */
+    var closingLls  = document.querySelectorAll('.closing-section .ll');
+    var closingDone = false;
+    new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting && !closingDone) {
+        closingDone = true;
+        closingLls.forEach(function (ll, i) {
+          ll.style.animationDelay = (0.15 + i * 0.18) + 's';
+          ll.classList.add('ll--run');
+        });
+      }
+    }, { threshold: 0.3 }).observe(document.querySelector('.closing-section'));
+
+    /* Generic reveal */
+    var revealIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); revealIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.js-reveal').forEach(function (el) { revealIO.observe(el); });
+
+    /* Typecast — typewriter for beige accent lines */
+    function svTypecast(el) {
+      var text = el.dataset.text || '';
+      el.textContent = '';
+      var cursor = document.createElement('span');
+      cursor.style.cssText = 'display:inline-block;color:#c8b89a;opacity:1;animation:cursorBlink 0.7s step-end infinite;margin-left:1px;';
+      el.appendChild(cursor);
+      text.split('').forEach(function (ch, i) {
+        setTimeout(function () {
+          el.insertBefore(document.createTextNode(ch), cursor);
+        }, i * 42);
+      });
+      setTimeout(function () {
+        cursor.style.animation = 'none';
+        cursor.style.transition = 'opacity 0.5s ease';
+        cursor.style.opacity = '0';
+      }, text.length * 42 + 900);
+    }
+    var svTypecastIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { svTypecast(e.target); svTypecastIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.js-sv-typecast').forEach(function (el) { svTypecastIO.observe(el); });
+
+    /* Services rows — tap-to-toggle on touch devices */
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+      var touchRows = document.querySelectorAll('.sv-row');
+      touchRows.forEach(function (row) {
+        row.addEventListener('click', function () {
+          var alreadyOpen = row.classList.contains('is-open');
+          touchRows.forEach(function (r) { r.classList.remove('is-open'); });
+          if (!alreadyOpen) { row.classList.add('is-open'); }
+        });
+      });
+    }
+
+  })();
+  </script>
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Go to top" style="color:rgb(120,230,200)">
+    <i class="fas fa-angle-double-up"></i>
+  </button>
+
+  <script>
+  (function () {
+    var btn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', function () {
+      btn.style.display = window.scrollY > 500 ? 'block' : 'none';
+    }, { passive: true });
+    window.topFunction = function () { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  })();
+  </script>
+
+  <div id="cookie-banner" style="position: fixed; bottom: 1.5rem; right: 1.5rem; background: #fff; color: #111; padding: 1.25rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 28px rgba(0,0,0,0.22); max-width: 300px; z-index: 9999; display: none; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+    <p style="margin: 0 0 0.4rem 0; font-weight: 700; font-size: 15px;">Cookie Notice</p>
+    <p style="margin: 0 0 1rem 0; color: #444;">We use cookies to analyze site traffic and improve your experience. <a href="privacy.html" style="color: #1a56a0;">Privacy Policy</a></p>
+    <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+      <button onclick="declineCookies()" style="background: transparent; color: #666; border: 1px solid #ddd; padding: 0.4rem 0.9rem; cursor: pointer; border-radius: 6px; font-size: 13px;">Decline</button>
+      <button onclick="acceptCookies()" style="background: #111; color: #fff; border: none; padding: 0.4rem 0.9rem; cursor: pointer; border-radius: 6px; font-size: 13px; font-weight: 600;">Accept</button>
+    </div>
+  </div>
+  <script>
+  (function() {
+    function loadGA() {
+      if (window._gaLoaded) return;
+      window._gaLoaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4CQ2CBR0C9';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function() { window.dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-4CQ2CBR0C9');
+    }
+    window.acceptCookies = function() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA();
+    };
+    window.declineCookies = function() {
+      localStorage.setItem('cookiesAccepted', 'false');
+      document.getElementById('cookie-banner').style.display = 'none';
+    };
+    if (localStorage.getItem('cookiesAccepted') === 'true') { loadGA(); }
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  })();
+  </script>
+
+</body>
+</html>
