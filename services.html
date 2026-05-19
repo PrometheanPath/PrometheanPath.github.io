@@ -578,17 +578,17 @@
           if (!alreadyOpen) { row.classList.add('is-open'); }
         });
       });
-
-      /* Pathway cards — tap-to-flip on touch devices */
-      var pathwayCards = document.querySelectorAll('.sv-pathway-card');
-      pathwayCards.forEach(function (card) {
-        card.addEventListener('click', function () {
-          var alreadyOpen = card.classList.contains('is-open');
-          pathwayCards.forEach(function (c) { c.classList.remove('is-open'); });
-          if (!alreadyOpen) { card.classList.add('is-open'); }
-        });
-      });
     }
+
+    /* Pathway cards — click/tap to flip; tap again to flip back */
+    var pathwayCards = document.querySelectorAll('.sv-pathway-card');
+    pathwayCards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        var alreadyOpen = card.classList.contains('is-open');
+        pathwayCards.forEach(function (c) { c.classList.remove('is-open'); });
+        if (!alreadyOpen) { card.classList.add('is-open'); }
+      });
+    });
 
   })();
   </script>
