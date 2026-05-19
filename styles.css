@@ -2211,7 +2211,6 @@ body.nav-open {
   .ts-num { font-size: 34px; }
   .ts-right { padding-left: 18px; padding-bottom: 40px; }
   .closing-headline { letter-spacing: -0.5px; }
-  .nav-links a:not(.nav-cta) { display: none; }
   .ti { width: 110px; height: 64px; padding: 0 10px; }
   .ti img { max-height: 44px; }
   .ticker-section { padding: 24px 0; }
