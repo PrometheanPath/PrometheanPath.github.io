@@ -1661,7 +1661,9 @@ body.nav-open {
   transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1);
   transform-style: preserve-3d;
 }
-.sv-pathway-card:hover .sv-pathway-card-inner,
+@media (hover: hover) {
+  .sv-pathway-card:hover .sv-pathway-card-inner { transform: rotateY(180deg); }
+}
 .sv-pathway-card.is-open .sv-pathway-card-inner {
   transform: rotateY(180deg);
 }
