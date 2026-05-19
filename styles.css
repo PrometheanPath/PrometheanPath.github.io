@@ -1636,6 +1636,94 @@ body.nav-open {
 .sv-list .ab-data-tag { color: #9a7455; }
 .sv-list-inner { max-width: 1000px; margin: 0 auto; }
 .sv-list-head  { margin-bottom: 72px; }
+.sv-pathway-head {
+  margin-top: 72px;
+  margin-bottom: 36px;
+}
+.sv-pathway-head .ab-data-tag { color: #9a7455; margin-bottom: 12px; }
+.sv-pathway-head .sv-list-title { font-size: clamp(17px, 2vw, 26px); }
+
+/* Pathway flip cards */
+.sv-pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.sv-pathway-card {
+  height: 220px;
+  perspective: 1000px;
+  cursor: default;
+}
+@media (hover: none) { .sv-pathway-card { cursor: pointer; } }
+.sv-pathway-card-inner {
+  position: relative;
+  width: 100%; height: 100%;
+  transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.sv-pathway-card:hover .sv-pathway-card-inner,
+.sv-pathway-card.is-open .sv-pathway-card-inner {
+  transform: rotateY(180deg);
+}
+.sv-pathway-card-front,
+.sv-pathway-card-back {
+  position: absolute;
+  inset: 0;
+  padding: 32px 28px;
+  border: 1px solid rgba(0,0,0,0.09);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+.sv-pathway-card-front {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.sv-pathway-card-back {
+  background: #f0edf8;
+  border-color: rgba(135,95,215,0.22);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sv-pathway-card-num {
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: rgba(135,95,215,0.65);
+  display: block;
+  margin-bottom: 12px;
+}
+.sv-pathway-card-name {
+  font-family: 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', Georgia, serif;
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 400;
+  color: #1a1410;
+  line-height: 1.2;
+}
+.sv-pathway-card-hint {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(135,95,215,0.45);
+  margin-top: 16px;
+}
+.sv-pathway-card-back-num {
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: rgba(135,95,215,0.5);
+  display: block;
+  margin-bottom: 10px;
+}
+.sv-pathway-card-body {
+  font-size: 13px;
+  color: #5c4d72;
+  line-height: 1.75;
+}
 .sv-list-title {
   font-family: 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', Georgia, serif;
   font-size: clamp(28px, 3.5vw, 46px);
@@ -1774,7 +1862,7 @@ body.nav-open {
 /* Alumni ticker */
 .sv-alumni {
   background: var(--dark2);
-  padding: 80px 0 88px;
+  padding: 40px 0 44px;
   overflow: hidden;
   border-top: 1px solid rgba(255,255,255,0.04);
 }
@@ -1785,7 +1873,7 @@ body.nav-open {
   text-transform: uppercase;
   color: rgba(106, 188, 155, 0.6);
   text-align: center;
-  margin-bottom: 44px;
+  margin-bottom: 28px;
 }
 .sv-alumni-track  { overflow: hidden; }
 .sv-alumni-inner  {
@@ -1800,14 +1888,14 @@ body.nav-open {
   align-items: center;
   gap: 16px;
   padding: 20px 28px;
-  background: rgba(255,255,255,0.025);
+  background: var(--dark2);
   border: 1px solid rgba(106,188,155,0.12);
   white-space: nowrap;
   flex-shrink: 0;
   transition: border-color 0.3s ease, background 0.3s ease;
 }
 .sv-profile:hover {
-  background: rgba(106,188,155,0.06);
+  background: rgba(7,16,28,0.95);
   border-color: rgba(106,188,155,0.28);
 }
 .sv-profile-avatar {
@@ -1867,19 +1955,20 @@ body.nav-open {
   letter-spacing: 0.01em;
 }
 
-/* Sectors — dark */
+/* Sectors — warm light brown */
 .sv-sectors {
-  background: #112236;
+  background: #f4ede0;
   padding: 120px 9% 130px;
-  border-top: 1px solid rgba(255,255,255,0.04);
+  border-top: 1px solid rgba(0,0,0,0.06);
 }
 .sv-sectors-inner { max-width: 1200px; margin: 0 auto; }
 .sv-sectors-head { margin-bottom: 80px; }
+.sv-sectors .ab-data-tag { color: rgba(120,85,200,0.75); }
 .sv-sectors-title {
   font-family: 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', Georgia, serif;
   font-size: clamp(28px, 3.5vw, 48px);
   font-weight: 400;
-  color: var(--cream);
+  color: #1a1410;
   line-height: 1.15;
   margin-top: 16px;
   letter-spacing: 0.01em;
@@ -1887,44 +1976,57 @@ body.nav-open {
 .sv-sectors-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(130,100,200,0.15);
 }
+
+/* Stagger reveal — parent gets in-view, children animate in sequence */
+.sv-sectors-grid .sv-sector { opacity: 0; }
+.sv-sectors-grid.in-view .sv-sector {
+  animation: sv-sector-in 0.55s var(--ease) both;
+}
+.sv-sectors-grid.in-view .sv-sector:nth-child(1) { animation-delay: 0.04s; }
+.sv-sectors-grid.in-view .sv-sector:nth-child(2) { animation-delay: 0.13s; }
+.sv-sectors-grid.in-view .sv-sector:nth-child(3) { animation-delay: 0.22s; }
+.sv-sectors-grid.in-view .sv-sector:nth-child(4) { animation-delay: 0.31s; }
+.sv-sectors-grid.in-view .sv-sector:nth-child(5) { animation-delay: 0.40s; }
+.sv-sectors-grid.in-view .sv-sector:nth-child(6) { animation-delay: 0.49s; }
+@keyframes sv-sector-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+
 .sv-sector {
   padding: 52px 40px 48px;
-  border-right: 1px solid rgba(255,255,255,0.06);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+  border-right: 1px solid rgba(130,100,200,0.12);
+  border-bottom: 1px solid rgba(130,100,200,0.12);
 }
-.sv-sector.in-view { opacity: 1; transform: none; }
 .sv-sector:nth-child(3n) { border-right: none; }
 .sv-sector:nth-child(4), .sv-sector:nth-child(5), .sv-sector:nth-child(6) { border-bottom: none; }
 .sv-sector-num {
   font-family: var(--serif);
   font-size: 13px;
   letter-spacing: 0.3em;
-  color: #6abcaa;
+  color: rgba(135,95,215,0.85);
   display: block;
   margin-bottom: 20px;
 }
 .sv-sector-line {
   width: 24px; height: 1px;
-  background: #6abcaa;
-  opacity: 0.5;
+  background: rgba(135,95,215,0.35);
+  opacity: 1;
   margin-bottom: 20px;
 }
 .sv-sector-name {
   font-family: 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', Georgia, serif;
   font-size: 20px;
   font-weight: 400;
-  color: var(--cream);
+  color: #1a1410;
   margin-bottom: 16px;
   line-height: 1.25;
 }
 .sv-sector-body {
   font-size: 15px;
-  color: rgba(175, 200, 195, 0.65);
+  color: #6b5e4a;
   line-height: 1.85;
 }
 
@@ -2190,13 +2292,15 @@ body.nav-open {
   .sv-hero-center { padding: 100px 24px; }
   .sv-vert-l, .sv-vert-r { display: none; }
   .sv-list { padding: 80px 6% 80px; }
+  .sv-pathway-grid { grid-template-columns: repeat(2, 1fr); }
+  .sv-pathway-card { height: 200px; }
   .sv-row-num  { width: 60px; }
   .sv-row-body { padding-left: 60px; font-size: 16px; }
   .sv-row-head { padding: 28px 0; }
   .sv-sectors-grid { grid-template-columns: 1fr 1fr; }
-  .sv-sector:nth-child(3n) { border-right: 1px solid rgba(255,255,255,0.06); }
+  .sv-sector:nth-child(3n) { border-right: 1px solid rgba(130,100,200,0.12); }
   .sv-sector:nth-child(2n) { border-right: none; }
-  .sv-sector:nth-child(4), .sv-sector:nth-child(5), .sv-sector:nth-child(6) { border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .sv-sector:nth-child(4), .sv-sector:nth-child(5), .sv-sector:nth-child(6) { border-bottom: 1px solid rgba(130,100,200,0.12); }
   .sv-sector:nth-child(5), .sv-sector:nth-child(6) { border-bottom: none; }
   .sv-sectors { padding: 80px 6% 80px; }
   .ab-data-section { padding: 72px 6% 72px; }
@@ -2224,8 +2328,12 @@ body.nav-open {
   .ti img { max-height: 44px; }
   .ticker-section { padding: 24px 0; }
   .sv-sectors-grid { grid-template-columns: 1fr; }
-  .sv-sector:nth-child(n) { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .sv-sector:nth-child(n) { border-right: none; border-bottom: 1px solid rgba(130,100,200,0.12); }
   .sv-sector:last-child { border-bottom: none; }
+  .sv-pathway-grid { grid-template-columns: 1fr; }
+  .sv-pathway-card { height: 160px; }
+  .sv-pathway-card-front, .sv-pathway-card-back { padding: 24px 20px; }
+  .sv-pathway-card-body { font-size: 12.5px; }
   .ab-data-stats { grid-template-columns: 1fr; }
   .ab-stat:nth-child(n) { border-right: none; border-top: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
   .ab-stat:last-child { border-bottom: none; }
